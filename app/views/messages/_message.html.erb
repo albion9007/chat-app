@@ -15,5 +15,6 @@
     <%# 投稿したメッセージ内容記述 %>
     <%= message.content%>
     </div>
+    <%= image_tag message.image.variant(resize:'500×500'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>
